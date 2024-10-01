@@ -1,0 +1,51 @@
+Series P04 Extended Closing Price Data	
+
+Fields marked with <$> indicate a <Not Null Constraint> meaning they will always be populated
+
+Rows with SecID populated:
+Primary key combo within any one file: ExchgCD + SecID + Currency + pricefilesymbol
+
+Rows with no SecID populated but with pricefilesymbol populated:
+Primary key combo within any one file: ExchgCD + Currency + pricefilesymbol
+
+Rows with no SecID populated but with no pricefilesymbol populated:
+Primary key combo within any one file: ExchgCD + Currency + Isin
+
+Note that if pricefilesymbol is not populated it must be regarded as an <empty string> rather than <null>.
+
+Note on historical files - Tidying up archive files to maintain primary key integrity is ongoing.
+With many supplier files in different formats the possibility of anomalies getting through which break assumptions is always a possibility.
+Adding precautionary fields to the primary key to allow for anomalies is not good practice. When anomalies are found/alerted the file will be fixed and resent.
+
+
+Element Name	DataType	Format	Max Width	Lookup TYPEGROUP	Field Description	
+<$> MIC	Char	Char String	6	MICCODE	Swift's ISO Standard 10383 Market Identification Code	
+<$> pricefilesymbol	Char	Char String	60		Ticker/localcode	
+Isin	Char	Char String	12		ISIN ISO Standard 6166	
+<$> Currency	Char	Char String	3	CUREN	ISO Standard 4217 Code for Base Currency	
+<$> PriceDate	Date	yyyy/mm/dd	10		Real date of price - note that this is does not necessarily match the closedate implied in the file name	
+Open	Double	64 bit	20		the first price of the trading day or session (can bederived,not necessarily the first trade/transaction)	
+High	Double	64 bit	20		day's high price	
+Low	Double	64 bit	20		day's low price	
+<$> Close	Double	64 bit	20		the official close of the trading day or session (can be derived,not necessarily the last trade/transaction)	
+Mid	Double	64 bit	20		the average of the bid and ask prices rounded up to the price format allowed for that tradableinstrument/currency (London SE only)	
+Ask	Double	64 bit	20		the selling price (ask/offer) for securities in the market	
+Last	Double	64 bit	20		the most recent (last) trade/transaction price of the trading day or session	
+Bid	Double	64 bit	20		the buying price for securities in the market	
+Bidsize	Double	64 bit	20			
+Asksize	Double	64 bit	20			
+TradedVolume	Double	64 bit	20		The number of shares or contracts traded during thetrading day or session	
+SecID	Integer	32 bit	10		Security ID from EDI's Worldwide Corporate Action Database to link into Corporate Actions	
+<$> MktCloseDate	Date	yyyy/mm/dd	10		Market Close Date	
+VolFlag	Char	Char String	1		Relates to trading Volume, A= Absolute, T= Stated in thousands trading day or session	
+Issuername	Varchar	Char String	70		EDI's Masterfile Issuer name if link established	
+SecTyCD	Char	Char String	3	SECTYPE	EDI's Masterfile Security Type Code if link established. EQS (Equity), PRF (Preference), DR (Depositary Receipt)	
+SecurityDesc	Varchar	Char String	70		EDI's Masterfile Security Description if link established	
+Sedol	Char	Char String	7		Sedol Code	
+Uscode	Char	Char String	9		Extracted from US an Canadian Isins	
+PrimaryExchgCD	Char	Char String	6	EXCHANGE	EDI proprietary Exchange Code of primary Listing if known	
+<$> ExchgCD	Char	Char String	6	EXCHANGE	EDI proprietary Exchange Code	
+TradedValue	Double	64 bit	20		The total value of shares or contracts traded during the trading day or session	
+TotalTrades	Integer	32 bit	11		Total numbers of trades in this stock	
+Comment	Varchar	Char String	50		Freetext comment for market specific information if any	
+						

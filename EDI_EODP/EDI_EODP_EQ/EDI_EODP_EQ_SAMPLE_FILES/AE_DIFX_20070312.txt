@@ -1,0 +1,10 @@
+EDI_Prices_P04_20070312
+MIC	PricefileSymbol	Isin	Currency	PriceDate	Open	High	Low	Close	Mid	Ask	Last	Bid	BidSize	AskSize	TradedVolume	SecID	MktCloseDate	Volflag	issuername	SectyCD	SecurityDesc	Sedol	Uscode	PrimaryExchgCD	ExchgCD	TradedValue	TotalTrades	Comment
+DIFX	BARKA	BH000A0KEZD7	USD	2007/03/12				2.95								376315	2007/03/12	A	Albaraka Banking Group	EQS	Ordinary Shares			BHBSE	AEDIFX			0
+DIFX	FMI1	USU026281027	USD	2007/03/12				4.65								75259	2007/03/12	A	Fortune Management Inc.	EQS	Ordinary Shares - Reg S		U02628102		AEDIFX			0
+DIFX	GFI	US38059T1060	USD	2007/03/12				18.51								76837	2007/03/12	A	Gold Fields Ltd	DR	ADR - Level II		38059T106	USNYSE	AEDIFX			0
+DIFX	HIK	US4312882081	USD	2007/03/12				14.15								665809	2007/03/12	A	Hikma Pharmaceuticals	DR	GDR - Reg S		431288208	AEDIFX	AEDIFX			0
+DIFX	KHI	KYG5257E1017	USD	2007/03/12				7.85								380886	2007/03/12	A	Kingdom Hotel Investments	EQS	Ordinary Shares				AEDIFX			0
+DIFX	MAN	US56164P1084	USD	2007/03/12				5.36								400472	2007/03/12	A	Man Industries (India) Ltd.	DR	GDR - Reg S		56164P108	AEDIFX	AEDIFX			0
+DIFX	RANA	US75188Q1085	USD	2007/03/12				7.33								368041	2007/03/12	A	Rana Sugars Ltd.	DR	GDR - Regulation S		75188Q108	AEDIFX	AEDIFX			0
+EDI_ENDOFFILE

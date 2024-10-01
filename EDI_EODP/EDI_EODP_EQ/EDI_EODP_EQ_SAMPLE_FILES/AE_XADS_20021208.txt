@@ -1,0 +1,9 @@
+EDI_Prices_P04_20021208
+MIC	PricefileSymbol	Isin	Currency	PriceDate	Open	High	Low	Close	Mid	Ask	Last	Bid	BidSize	AskSize	TradedVolume	SecID	MktCloseDate	Volflag	issuername	SectyCD	SecurityDesc	Sedol	Uscode	PrimaryExchgCD	ExchgCD	TradedValue	TotalTrades	Comment
+XADS	ADIB	AEA000801018	AED	2002/12/08	17.1	17.15	17.1	17.1							26130	69969	2002/12/08	A	Abu Dhabi Islamic Bank	EQS	Ordinary Shares			AEADSM	AEADSM	447073	17	0
+XADS	AKIC	AEA000401017	AED	2002/12/08	121.5	121.5	121.5	121.5							2300	75699	2002/12/08	A	Al-Khazna Insurance Co	EQS	Ordinary Shares			AEADSM	AEADSM	279450	1	0
+XADS	AWNIC	AEA001601011	AED	2002/12/08	3.3	3.3	3.3	3.3							5000	149183	2002/12/08	A	Al-Wathba Insurance	EQS	Ordinary Shares			AEADSM	AEADSM	16500	1	0
+XADS	ETISALAT	AEE000401019	AED	2002/12/08	117	117.5	117	117.5							13085	76007	2002/12/08	A	Emirates Telecommunications Co.	EQS	Ordinary Shares			AEADSM	AEADSM	1535445	7	0
+XADS	NCTH	AEN001001017	AED	2002/12/08	296	296	296	296							250	149062	2002/12/08	A	National Corporation for Tourism & Hotels	EQS	Ordinary Shares			AEADSM	AEADSM	74000	1	0
+XADS	QTEL	QA0007227737	AED	2002/12/08	113.5	113.5	113.5	113.5							4000	69081	2002/12/08	A	Ooredoo Q.S.C.	EQS	Ordinary Shares			QADSM	AEADSM	454000	2	0
+EDI_ENDOFFILE
